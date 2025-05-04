@@ -3,7 +3,7 @@ uncover hidden ssid
 
 ### Monitor Mode
 ```bash
-airmon-ng start {nic}
+airmon-ng start wlxb4b024bce0bd
 ```
 
 ### Tool Command
