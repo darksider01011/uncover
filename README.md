@@ -1,5 +1,5 @@
 # uncover
-![Drag Racing](1.png)
+![Drag Racing](/package/1.png)
 
 ### Monitor Mode
 ```bash
