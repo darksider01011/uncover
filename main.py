@@ -33,7 +33,7 @@ def deauth(interface, mac, ch):
     try:
         print("Sending deauth...")
         packages.deauther.deauth(interface, mac, ch)
-        print("")
+        print("Waiting for client to connect AP...")
     except Exception as e:
         print(e)
 
