@@ -40,7 +40,7 @@ def deauth(interface, mac, ch):
 
 def intercept():
     try:
-        capture = pyshark.LiveCapture(interface=interface, display_filter='wlan.bssid == BE:32:B2:4D:DF:4F  && wlan.fc.type_subtype == 0')
+        capture = pyshark.LiveCapture(interface=interface, display_filter=f'wlan.bssid == {mac}  && wlan.fc.type_subtype == 0')
         capture.sniff(timeout= 5)
         for packet in capture.sniff_continuously(packet_count=1):
             with open('ssid.txt', 'w') as file:
