@@ -1,0 +1,4 @@
+pyshark
+argparse
+pyfiglet
+scapy
